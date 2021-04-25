@@ -15,7 +15,7 @@
 
 body {
 
-    background: url('/imagem/background.jpg') no-repeat;
+    background: url('../imagem/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -170,6 +170,8 @@ footer {
     position: absolute;
     bottom: 0;
 
+    transition: 0.2s;
+
 }
 
 footer .socialMedia {
@@ -318,13 +320,19 @@ label {
     
     }
 
+    footer {
+
+        margin-left: 7rem;
+
+    }
+
 }
 
 @media(max-width: 1200px) {
 
     body {
 
-        background: url('/imagem/background-centro.jpg') no-repeat;
+        background: url('../imagem/background-centro.jpg') no-repeat;
         background-size: cover;
         background-position: center;
 
@@ -368,7 +376,6 @@ label {
         display: block;
 
         margin-top: 5rem;
-        
 
     }
 
@@ -397,6 +404,12 @@ label {
     
     }
 
+    footer {
+
+        margin-left: 7rem;
+
+    }
+
     label {
 
         display: flex;
@@ -414,9 +427,8 @@ label {
         z-index: 2;
 
         position: absolute;
+        top: 20px;
         left: 47%;
-
-        transition: all 0.5s;
 
     }
 
