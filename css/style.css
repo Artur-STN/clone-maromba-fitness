@@ -1,0 +1,504 @@
+* {
+
+    font-family: 'Poppins';
+
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    outline: none;
+
+}
+
+body {
+
+    background: url('/imagem/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+
+    width: 1300px;
+
+    height: 90px;
+
+    transition: 0.5s;
+
+}
+
+header h1 {
+
+    color: white;
+
+    font-size: 2.5rem;
+
+    text-align: center;
+
+    width: 200px;
+
+    transition: 0.3s;
+
+}
+
+header h1:hover {
+
+    color: #006696;
+
+    border-bottom: 1px solid #03A9F4;
+
+}
+
+header nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav ul li {
+
+    font-size: 1.5rem;
+
+    color: white;
+
+    text-align: center;
+
+    width: 150px;
+
+    border-bottom: 1px solid;
+
+    transition: 0.3s;
+
+}
+
+header nav ul li:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+    color: #03A9F4;
+
+    border-bottom: 1px solid #006696;
+
+}
+
+main {
+
+    margin: 5rem 0 0 2rem;
+
+    transition: 0.5s;
+
+}
+
+main h1 {
+
+    color: white;
+
+    font-size: 3.5rem;
+
+    width: 500px;
+
+}
+
+main p {
+
+    color: white;
+
+    width: 570px;
+
+}
+
+main button {
+
+    background: #03A9F4;
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    width: 150px;
+    height: 50px;
+
+    margin-top: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+main button:hover {
+
+    background: transparent;
+    color: #03A9F4;
+
+    text-shadow: 0 0 5px black;
+
+    border: 2px solid #006696;
+
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    height: 150px;
+
+    margin-left: 2rem;
+
+    position: absolute;
+    bottom: 0;
+
+}
+
+footer .socialMedia {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 250px;
+    height: 60px;
+
+}
+
+footer .socialMedia .fab,
+footer .creditos .fab {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 2px black;
+
+    color: white;
+
+    width: 45px;
+    height: 45px;
+
+    transition: 0.2s;
+
+}
+
+footer .socialMedia .fab:hover {
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px black;
+
+}
+
+footer .socialMedia .fa-facebook-f:hover {
+
+    background: #1873EB;
+
+}
+
+footer .socialMedia .fa-twitter:hover {
+
+    background: #00ACEE;
+
+}
+
+footer .socialMedia .fa-instagram:hover {
+
+    background: linear-gradient(to bottom left, #515BD4, #8134AF, #DD2A7B, #FEDA77 90%, #F58529 100%);
+
+}
+
+footer .socialMedia .fa-github:hover {
+
+    background: black;
+
+}
+
+footer .creditos {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    font-size: 1.5rem;
+
+    text-align: center;
+
+    border-left: 1px solid white;
+
+    height: 100px;
+
+    padding: 1rem;
+
+}
+
+footer .creditos p {
+
+    color: white;
+
+    font-weight: bolder;
+
+}
+
+footer .creditos .fab:hover {
+
+    background: white;
+    color: #EE0F0F;
+
+    font-size: 2.5rem;
+
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+}
+
+#inputCheckBars {
+
+    display: none;
+
+}
+
+label {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    
+    font-size: 2rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    width: 45px;
+    height: 45px;
+
+}
+
+@media(max-width: 1350px) {
+
+    header {
+
+        width: 1100px;
+
+    }
+
+    main {
+
+        margin: 5rem 0 0 7rem;
+    
+    }
+
+}
+
+@media(max-width: 1200px) {
+
+    body {
+
+        background: url('/imagem/background-centro.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    header {
+
+        width: 1000px;
+
+    }
+
+}
+
+@media(max-width: 1080px) {
+
+    header {
+
+        width: 700px;
+
+    }
+
+    header nav {
+        
+        background: #000;
+
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        left: -100vw;
+
+        z-index: 1;
+
+        transition: all 0.5s;
+
+    }
+
+    header nav ul {
+
+        display: block;
+
+        margin-top: 5rem;
+        
+
+    }
+
+    header nav ul li {
+
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        flex-direction: column;
+        
+        border-bottom: none;
+
+        width: 100vw;
+
+        padding: 3rem 0;
+
+    }
+
+    header nav ul li:hover {
+
+        background: rgba(255, 255, 255, 0.1);
+        color: #03A9F4;
+
+        border-bottom: none;
+    
+    }
+
+    label {
+
+        display: flex;
+
+    }
+
+    #inputCheckBars:checked ~ nav {
+
+        left: 0;
+
+    }
+
+    #inputCheckBars:checked ~ label {
+
+        z-index: 2;
+
+        position: absolute;
+        left: 47%;
+
+        transition: all 0.5s;
+
+    }
+
+}
+
+@media(max-width: 720px) {
+
+    header {
+
+        flex-direction: column;
+        
+        width: 500px;
+        height: 120px;
+
+    }
+
+    main {
+
+        width: 500px;
+
+        margin: 5rem auto 0 auto;
+    
+    }
+
+    main h1 {
+
+        font-size: 2.5rem;
+
+        width: 400px;
+
+    }
+
+    main p{
+
+        width: 400px;
+    
+    }
+
+    main button {
+
+        width: 100%;
+
+    }
+
+    footer {
+
+        flex-direction: column;
+        
+        width: 100%;
+
+        margin-left: 0;
+
+        transition: 0.5s;
+
+    }
+
+    footer .creditos {
+
+        border: none;
+
+    }
+
+}
+
+@media(max-width: 620px) {
+
+    main {
+
+        width: 400px;
+    
+    }
+
+    main h1{
+
+        width: 400px;
+    
+    }
+
+    main p{
+
+        width: 400px;
+    
+    }
+
+}
