@@ -403,7 +403,7 @@ footer .creditos .fab:hover {
         top: 0;
         left: -100vw;
 
-        z-index: 1;
+        z-index: 3;
 
         transition: all 0.5s;
 
@@ -464,7 +464,7 @@ footer .creditos .fab:hover {
 
     #inputCheckBars:checked~.labelBars {
 
-        z-index: 2;
+        z-index: 4;
 
         position: absolute;
 
@@ -594,6 +594,8 @@ footer .creditos .fab:hover {
         left: -100vw;
 
         padding: 0.5rem 0;
+
+        z-index: 1;
 
     }
 
