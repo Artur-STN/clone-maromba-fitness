@@ -281,13 +281,14 @@ footer .creditos .fab:hover {
 
 }
 
-#inputCheckBars {
+#inputCheckBars,
+#inputCheckArrow {
 
     display: none;
 
 }
 
-label {
+.labelBars {
 
     display: none;
     align-items: center;
@@ -297,12 +298,49 @@ label {
 
     font-size: 2rem;
 
-    border-radius: 10px;
+    border-radius: 5px;
 
     cursor: pointer;
 
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+
+    transition: 0.2s;
+
+}
+
+.labelBars:hover,
+.labelArrow:hover {
+
+    color: #03A9F4;
+
+}
+
+.labelArrow {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 2rem;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 5px black;
+
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+
+    transition: 0.2s;
+
+    position: absolute;
+    
+    left: 15px;
+    bottom: 70px;
 
 }
 
@@ -373,7 +411,9 @@ label {
 
     header nav ul {
 
-        display: block;
+        justify-content: space-around;
+
+        flex-direction: column;
 
         margin-top: 5rem;
 
@@ -410,7 +450,7 @@ label {
 
     }
 
-    label {
+    .labelBars {
 
         display: flex;
 
@@ -422,13 +462,11 @@ label {
 
     }
 
-    #inputCheckBars:checked~label {
+    #inputCheckBars:checked~.labelBars {
 
         z-index: 2;
 
         position: absolute;
-        top: 20px;
-        left: 47%;
 
     }
 
@@ -515,15 +553,7 @@ label {
 
 }
 
-@media(max-width: 500px) {
-
-    body {
-
-        overflow-y: scroll;
-
-    }
-
-    header {
+@media(max-width: 500px) {header {
 
         width: 100vw;
 
@@ -559,9 +589,31 @@ label {
 
     footer {
 
-        margin-top: 2rem;
+        background: rgba(0, 0, 0, 0.2);
         
-        position: relative;
+        left: -100vw;
+
+        padding: 0.5rem 0;
+
+    }
+
+    .labelArrow {
+
+        display: flex;
+
+        z-index: 2;
+
+    }
+
+    #inputCheckArrow:checked~footer {
+
+        left: 0;
+
+    }
+
+    #inputCheckArrow:checked~label {
+
+        transform: rotate(180deg);
 
     }
 
