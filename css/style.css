@@ -294,7 +294,7 @@ label {
     justify-content: center;
 
     color: white;
-    
+
     font-size: 2rem;
 
     border-radius: 10px;
@@ -317,7 +317,7 @@ label {
     main {
 
         margin: 5rem 0 0 7rem;
-    
+
     }
 
     footer {
@@ -355,7 +355,7 @@ label {
     }
 
     header nav {
-        
+
         background: #000;
 
         width: 100vw;
@@ -386,7 +386,7 @@ label {
         justify-items: center;
 
         flex-direction: column;
-        
+
         border-bottom: none;
 
         width: 100vw;
@@ -401,7 +401,7 @@ label {
         color: #03A9F4;
 
         border-bottom: none;
-    
+
     }
 
     footer {
@@ -416,13 +416,13 @@ label {
 
     }
 
-    #inputCheckBars:checked ~ nav {
+    #inputCheckBars:checked~nav {
 
         left: 0;
 
     }
 
-    #inputCheckBars:checked ~ label {
+    #inputCheckBars:checked~label {
 
         z-index: 2;
 
@@ -439,7 +439,7 @@ label {
     header {
 
         flex-direction: column;
-        
+
         width: 500px;
         height: 120px;
 
@@ -450,7 +450,7 @@ label {
         width: 500px;
 
         margin: 5rem auto 0 auto;
-    
+
     }
 
     main h1 {
@@ -461,10 +461,10 @@ label {
 
     }
 
-    main p{
+    main p {
 
         width: 400px;
-    
+
     }
 
     main button {
@@ -476,7 +476,7 @@ label {
     footer {
 
         flex-direction: column;
-        
+
         width: 100%;
 
         margin-left: 0;
@@ -498,19 +498,71 @@ label {
     main {
 
         width: 400px;
-    
+
     }
 
-    main h1{
+    main h1 {
 
         width: 400px;
-    
+
     }
 
-    main p{
+    main p {
 
         width: 400px;
-    
+
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    body {
+
+        overflow-y: scroll;
+
+    }
+
+    header {
+
+        width: 100vw;
+
+    }
+
+    main {
+
+        width: 300px;
+        margin: auto;
+
+    }
+
+    main h1 {
+
+        width: 300px;
+        text-align: center;
+
+    }
+
+    main p {
+
+        width: 300px;
+        text-align: center;
+
+    }
+
+    main button {
+
+        width: 300px;
+        text-align: center;
+
+    }
+
+    footer {
+
+        margin-top: 2rem;
+        
+        position: relative;
+
     }
 
 }
