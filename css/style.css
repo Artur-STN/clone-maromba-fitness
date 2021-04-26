@@ -305,12 +305,11 @@ footer .creditos .fab:hover {
     width: 40px;
     height: 40px;
 
-    transition: 0.2s;
+    transition: 0.5s;
 
 }
 
-.labelBars:hover,
-.labelArrow:hover {
+.labelBars:hover {
 
     color: #03A9F4;
 
@@ -322,25 +321,33 @@ footer .creditos .fab:hover {
     align-items: center;
     justify-content: center;
 
-    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    color: #006696;
 
     font-size: 2rem;
 
-    border-radius: 50%;
+    border-radius: 100%;
 
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 2px black;
 
     cursor: pointer;
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     transition: 0.2s;
 
     position: absolute;
     
     left: 15px;
-    bottom: 70px;
+    bottom: 30px;
+
+}
+
+.labelArrow:hover {
+
+    background: rgba(3, 168, 244, 0.5);
+    color: white;
 
 }
 
@@ -468,6 +475,8 @@ footer .creditos .fab:hover {
 
         position: absolute;
 
+        transform: translateX(44.5vh);
+
     }
 
 }
@@ -529,6 +538,14 @@ footer .creditos .fab:hover {
 
     }
 
+    #inputCheckBars:checked~.labelBars {
+
+        transform: translateY(30px);
+
+        transition: 1s;
+
+    }
+
 }
 
 @media(max-width: 620px) {
@@ -553,7 +570,9 @@ footer .creditos .fab:hover {
 
 }
 
-@media(max-width: 500px) {header {
+@media(max-width: 620px) {
+    
+    header {
 
         width: 100vw;
 
@@ -589,7 +608,7 @@ footer .creditos .fab:hover {
 
     footer {
 
-        background: rgba(0, 0, 0, 0.2);
+        background: #006696;
         
         left: -100vw;
 
