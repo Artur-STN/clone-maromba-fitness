@@ -50,7 +50,7 @@ header h1 {
 
     text-align: center;
 
-    width: 200px;
+    /* width: 200px; */
 
     transition: 0.3s;
 
@@ -80,9 +80,7 @@ header nav ul li {
 
     text-align: center;
 
-    width: 150px;
-
-    border-bottom: 1px solid;
+    width: 120px;
 
     transition: 0.3s;
 
@@ -90,10 +88,8 @@ header nav ul li {
 
 header nav ul li:hover {
 
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.09);
     color: #03A9F4;
-
-    border-bottom: 1px solid #006696;
 
 }
 
@@ -131,7 +127,7 @@ main button {
     font-size: 1.2rem;
     font-weight: bold;
 
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
 
     width: 150px;
@@ -152,7 +148,7 @@ main button:hover {
 
     text-shadow: 0 0 5px black;
 
-    border: 2px solid #006696;
+    border: 1px solid #006696;
 
 }
 
@@ -281,8 +277,7 @@ footer .creditos .fab:hover {
 
 }
 
-#inputCheckBars,
-#inputCheckArrow {
+#inputCheckBars {
 
     display: none;
 
@@ -315,41 +310,6 @@ footer .creditos .fab:hover {
 
 }
 
-.labelArrow {
-
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.5);
-    color: #006696;
-
-    font-size: 2rem;
-
-    border-radius: 100%;
-
-    box-shadow: 0 0 2px black;
-
-    cursor: pointer;
-
-    width: 50px;
-    height: 50px;
-
-    transition: 0.2s;
-
-    position: absolute;
-    
-    left: 15px;
-    bottom: 30px;
-
-}
-
-.labelArrow:hover {
-
-    background: rgba(3, 168, 244, 0.5);
-    color: white;
-
-}
 
 @media(max-width: 1350px) {
 
@@ -393,24 +353,29 @@ footer .creditos .fab:hover {
 
 @media(max-width: 1080px) {
 
+    body {
+
+        overflow-y: scroll;
+
+    }
+
     header {
 
-        width: 700px;
+        width: 600px;
 
     }
 
     header nav {
 
-        background: #000;
+        background: rgba(0, 0, 0, 0.6);
 
         width: 100vw;
-        height: 100vh;
 
         position: absolute;
         top: 0;
         left: -100vw;
 
-        z-index: 3;
+        z-index: 1;
 
         transition: all 0.5s;
 
@@ -422,7 +387,7 @@ footer .creditos .fab:hover {
 
         flex-direction: column;
 
-        margin-top: 5rem;
+        padding-top: 5rem;
 
     }
 
@@ -438,13 +403,13 @@ footer .creditos .fab:hover {
 
         width: 100vw;
 
-        padding: 3rem 0;
+        padding: 2.5rem 0;
 
     }
 
     header nav ul li:hover {
 
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 1);
         color: #03A9F4;
 
         border-bottom: none;
@@ -471,11 +436,9 @@ footer .creditos .fab:hover {
 
     #inputCheckBars:checked~.labelBars {
 
-        z-index: 4;
+        z-index: 2;
 
-        position: absolute;
-
-        transform: translateX(44.5vh);
+        transition: z-index 1s;
 
     }
 
@@ -483,12 +446,21 @@ footer .creditos .fab:hover {
 
 @media(max-width: 720px) {
 
+
     header {
 
         flex-direction: column;
 
         width: 500px;
         height: 120px;
+
+        margin: 2rem auto;
+
+    }
+
+    header nav ul li {
+
+        padding: 2rem 0;
 
     }
 
@@ -526,9 +498,11 @@ footer .creditos .fab:hover {
 
         width: 100%;
 
-        margin-left: 0;
+        margin: 3rem 0 1.5rem 0;
 
         transition: 0.5s;
+
+        position: relative;
 
     }
 
@@ -540,41 +514,25 @@ footer .creditos .fab:hover {
 
     #inputCheckBars:checked~.labelBars {
 
-        transform: translateY(30px);
+        transform: translateY(-90px);
 
-        transition: 1s;
-
-    }
-
-}
-
-@media(max-width: 620px) {
-
-    main {
-
-        width: 400px;
-
-    }
-
-    main h1 {
-
-        width: 400px;
-
-    }
-
-    main p {
-
-        width: 400px;
+        transition: transform 1s;
 
     }
 
 }
 
 @media(max-width: 620px) {
-    
+
     header {
 
         width: 100vw;
+
+    }
+    
+    header nav ul li {
+        
+        padding: 2rem 0;
 
     }
 
@@ -603,38 +561,6 @@ footer .creditos .fab:hover {
 
         width: 300px;
         text-align: center;
-
-    }
-
-    footer {
-
-        background: #006696;
-        
-        left: -100vw;
-
-        padding: 0.5rem 0;
-
-        z-index: 1;
-
-    }
-
-    .labelArrow {
-
-        display: flex;
-
-        z-index: 2;
-
-    }
-
-    #inputCheckArrow:checked~footer {
-
-        left: 0;
-
-    }
-
-    #inputCheckArrow:checked~label {
-
-        transform: rotate(180deg);
 
     }
 
